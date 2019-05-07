@@ -1,0 +1,21 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "time-line-web-part": {
+      "components": [{
+        "entrypoint": "./lib/webparts/timeLine/TimeLineWebPart.js",
+        "manifest": "./src/webparts/timeLine/TimeLineWebPart.manifest.json"
+      }]
+    }
+  },
+  "externals": {
+    "timelinejs3": {
+      "path": "node_modules/timelinejs3/compiled/js/timeline-min.js",
+      "globalName": "timelinejs3"
+    }
+  },
+  "localizedResources": {
+    "TimeLineWebPartStrings": "lib/webparts/timeLine/loc/{locale}.js"
+  }
+}
