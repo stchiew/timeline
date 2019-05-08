@@ -11,7 +11,7 @@ import { SPComponentLoader } from '@microsoft/sp-loader';
 
 import styles from './TimeLineWebPart.module.scss';
 import * as strings from 'TimeLineWebPartStrings';
-
+import TimeLineMockData from './TimeLineMockData';
 export interface ITimeLineWebPartProps {
   description: string;
 }
@@ -22,13 +22,14 @@ export default class TimeLineWebPart extends BaseClientSideWebPart<ITimeLineWebP
 
     SPComponentLoader.loadCss('//cdn.knightlab.com/libs/timeline3/latest/css/timeline.css');
   }
+
   public render(): void {
     this.domElement.innerHTML = `
       <div class="${ styles.timeLine}">
         <div id='timeline-embed' style="width: 100%; height: 600px"></div>
       </div>`;
 
-    let events = this._getEvents();
+    let events = TimeLineMockData.getData();
     var timeline = new TL.Timeline("timeline-embed", events);
   }
 
@@ -56,6 +57,10 @@ export default class TimeLineWebPart extends BaseClientSideWebPart<ITimeLineWebP
         }
       ]
     };
+  }
+
+  private _getData(): any {
+    return TimeLineMockData.getData();
   }
 
   private _getEvents(): any {

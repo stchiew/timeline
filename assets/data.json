@@ -1,0 +1,31 @@
+{
+  "timeline": {
+    "headline": "ResMed's 30-Year Journey",
+    "startDate": "1982",
+    "text": "<p>ResMed's journey of innovation</p>",
+    "type": "default",
+    "asset": {
+      "media": "https://resmedglobal.sharepoint.com/sites/ITCollaboration/SiteAssets/timeline/30years.png"
+    },
+    "date": [
+      {
+        "startDate": "1982",
+        "headline": "The Headquarters",
+        "text": "ResMed's first headquarters at Waterloo Road",
+        "asset": {
+          "media": "https://resmedglobal.sharepoint.com/sites/ITCollaboration/SiteAssets/timeline/82WaterlooRd.png",
+          "caption": ""
+        }
+            },
+      {
+        "startDate": "1988,9",
+        "headline": "R2, Standard mask",
+        "text": "<p>Baxter products – first mask, the R2</p>",
+        "asset": {
+          "media": "https://resmedglobal.sharepoint.com/sites/ITCollaboration/SiteAssets/timeline/rs-standard-mask.jpg",
+          "caption": ""
+        }
+      }
+		]
+  }
+}
