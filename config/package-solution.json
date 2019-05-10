@@ -1,13 +1,13 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
-  "solution": {
-    "name": "timeline-client-side-solution",
-    "id": "0308f821-dfb7-4867-9110-8967a4694b8a",
-    "version": "1.0.0.0",
-    "includeClientSideAssets": true,
-    "isDomainIsolated": false
-  },
-  "paths": {
-    "zippedPackage": "solution/timeline.sppkg"
-  }
+	"$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+	"solution": {
+		"name": "timeline-client-side-solution",
+		"id": "0308f821-dfb7-4867-9110-8967a4694b8a",
+		"version": "1.0.0.2",
+		"includeClientSideAssets": true,
+		"isDomainIsolated": false
+	},
+	"paths": {
+		"zippedPackage": "solution/timeline.sppkg"
+	}
 }

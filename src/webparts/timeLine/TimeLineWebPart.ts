@@ -28,9 +28,9 @@ export default class TimeLineWebPart extends BaseClientSideWebPart<ITimeLineWebP
       <div class="${ styles.timeLine}">
         <div id='timeline-embed' style="width: 100%; height: 600px"></div>
       </div>`;
-
+    let options = { default_bg_color: "white" };
     let events = TimeLineMockData.getData();
-    var timeline = new TL.Timeline("timeline-embed", events);
+    var timeline = new TL.Timeline("timeline-embed", events, options);
   }
 
   protected get dataVersion(): Version {
